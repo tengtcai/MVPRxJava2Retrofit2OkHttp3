@@ -1,4 +1,4 @@
-package com.android.aiziran.baicaoyuan.base;
+package com.android.aiziran.baicaoyuan.net.base;
 
 import android.accounts.NetworkErrorException;
 

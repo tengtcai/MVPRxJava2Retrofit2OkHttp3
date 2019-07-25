@@ -1,4 +1,4 @@
-package com.android.aiziran.baicaoyuan.base;
+package com.android.aiziran.baicaoyuan.net.base;
 
 /**
  * Created by fg on 2017/7/25.

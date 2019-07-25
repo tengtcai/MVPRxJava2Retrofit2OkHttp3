@@ -37,5 +37,7 @@ public abstract class BasePresenter<M extends IModel, V extends IView> implement
             wrf.clear();
             wrf = null;
         }
+        onViewDestroy();
     }
+    protected abstract void onViewDestroy();
 }

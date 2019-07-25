@@ -2,9 +2,9 @@ package com.android.aiziran.baicaoyuan.presenter;
 
 import android.content.Context;
 
-import com.android.aiziran.baicaoyuan.base.BaseObserver;
+import com.android.aiziran.baicaoyuan.net.base.BaseObserver;
 import com.android.aiziran.baicaoyuan.base.BasePresenter;
-import com.android.aiziran.baicaoyuan.base.BaseResult;
+import com.android.aiziran.baicaoyuan.net.base.BaseResult;
 import com.android.aiziran.baicaoyuan.bean.AdBean;
 import com.android.aiziran.baicaoyuan.interfaces.models.SplashModel;
 import com.android.aiziran.baicaoyuan.interfaces.view.SplashView;
@@ -60,6 +60,13 @@ public class SplashPresenter extends BasePresenter<SplashModel, SplashView> {
                     }
                 }
             });
+        }
+    }
+
+    @Override
+    protected void onViewDestroy() {//销毁Activity时的操作，可以停止当前的model
+        if (model != null) {
+            model.stopRequest();
         }
     }
 }

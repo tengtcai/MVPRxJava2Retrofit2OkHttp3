@@ -2,8 +2,8 @@ package com.android.aiziran.baicaoyuan.net.obvable;
 
 import android.content.Context;
 
-import com.android.aiziran.baicaoyuan.base.BaseRequest;
-import com.android.aiziran.baicaoyuan.base.BaseResult;
+import com.android.aiziran.baicaoyuan.net.base.BaseRequest;
+import com.android.aiziran.baicaoyuan.net.base.BaseResult;
 import com.android.aiziran.baicaoyuan.bean.AdBean;
 import com.android.aiziran.baicaoyuan.interfaces.models.SplashModel;
 
@@ -18,5 +18,9 @@ public class SplashModelImpl implements SplashModel {
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread());
         return observable;
+    }
+    @Override
+    public void stopRequest() {
+
     }
 }

@@ -1,6 +1,6 @@
 package com.android.aiziran.baicaoyuan.interfaces;
 
-import com.android.aiziran.baicaoyuan.base.BaseResult;
+import com.android.aiziran.baicaoyuan.net.base.BaseResult;
 import com.android.aiziran.baicaoyuan.bean.AdBean;
 import com.android.aiziran.baicaoyuan.bean.MeiZiBean;
 
