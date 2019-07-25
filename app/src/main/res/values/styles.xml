@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--去除ActionBar有效果-->
+        <item name="windowActionBar">false</item>
+        <!-- 使用 APIcol Level 22，要去掉前面title -->
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/color_ffffff</item>
+    </style>
+    <!--弹出窗样式-->
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item><!-- 这两个属性不加上顶部会出现阴影 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item><!--是否显示灰度-->
+        <item name="android:backgroundDimAmount">0</item><!--背景灰度  0-1  1全黑-->
+    </style>
+
+    <style name="dialog_hui" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item><!-- 这两个属性不加上顶部会出现阴影 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item><!--是否显示灰度-->
+        <item name="android:backgroundDimAmount">0.3</item><!--背景灰度  0-1  1全黑-->
+    </style>
+
+</resources>
